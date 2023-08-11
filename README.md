@@ -17,10 +17,10 @@ A Catalyst for Growth and Innovation, the reason for the development of STM32Pla
 <p>Additionally, the compact nature of the design wasn't just about efficient use of space; it also served a practical purpose. I aimed to create a development board that could seamlessly integrate into my other projects as a convenient replacement. This design approach allows for easy adaptability across different projects, simplifying development and minimizing the need for significant redesigns.
 
 ## System Architecture
-[Block diagram]
+![Block Diagram/Architecture](/Images/blockDiagram.png)
 
 ## Board Component Selection
-[Board Front with arrows]
+![Board Components](/Images/BoardComponents.png)
 ### Microcontroller:
 1.	The board's core is an STM32F103C8T6 microcontroller from STMicroelectronics, running with a 16MHz High-Speed External Oscillator.
 2.	Board has a configurable BOOT0 for different operational modes.
@@ -45,8 +45,10 @@ A Catalyst for Growth and Innovation, the reason for the development of STM32Pla
 2.	The entire bottom layer of the board is grounded, and the Top layer is the signals layer.
 3.	A wide trace of 0.5mm is for power, and a 0.3mm trace is for signals.
 4. The board dimensions are 56x36mm. 
-
-[Front.cu] [Back.cu]
+#### Front Copper
+![Front Copper](/Images/front.Cu.png)
+#### Back Copper
+![Back Copper](/Images/back.Cu.png)
 
 ## Interfacing and Capabilities
 1.	This board functions as a development board with GPIO and communication protocols exposed. 

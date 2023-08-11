@@ -5,6 +5,8 @@
 Introducing the STM32PlayBoard. As the name suggests, the main object of developing this board is to expand my knowledge and provide an entry gate for others to learn Embedded Systems with a well-known and documented microcontroller by STMicroelectronics. 
 <p>This project opens the door to immersive learning experiences and practical experimentation.
 
+![Top](BoardFront.png) 
+![Bottom](BoardBack.png)
 
 ## Why I Designed the STM32PlayBoard?
 A Catalyst for Growth and Innovation, the reason for the development of STM32PlayBoard was rooted in a dual ambition: to push the boundaries of my expertise in PCB design while creating a versatile tool that resonates with my journey in Embedded Systems.

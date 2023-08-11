@@ -31,6 +31,7 @@ A Catalyst for Growth and Innovation, the reason for the development of STM32Pla
 1.	The board can be powered by an external voltage supply and through Micro B USB. They are reverse polarity protected and can both coexist.
 2.	The voltage regulation is accomplished using AMS1117-3.3 linear voltage regulator from Advanced Monolithic Systems. Since the main component on the board is the main microcontroller IC, I went with this standard, less expensive, and easily available LDO.
 3.	The maximum voltage that can be provided externally is 18V, and the maximum drop-out voltage of this LDO is 1.2V at 1A. We are going to be far from this current consumption using this board.
+4. The Silkscreen on the back side of the PCB shows 15V is just an additional safety measure (not to exceed 15V even though up to 18V is acceptable).
 ### USB:
 1.	The board supports USB 2.0 full-speed interface using a Micro B connector.
 2.	The board provides ESD protection on USB using USBLC6 IC from STMicroelectronics.

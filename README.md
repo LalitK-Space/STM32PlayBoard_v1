@@ -38,11 +38,13 @@ A Catalyst for Growth and Innovation, the reason for the development of STM32Pla
 
 ## PCB Design and Schematics:
 ### Schematics
-[Link to schematics]
+[Schematics](https://github.com/LalitK-Space/STM32PlayBoard_v1/blob/main/STM32PlayBoard_Schematics/STM32PlayBoard_v1.pdf)
+
 ### Board Layout Considerations
 1.	The PCB is two layered board. The reason for being two layers is I wanted to go with a simple board design, which also minimizes the production cost.
 2.	The entire bottom layer of the board is grounded, and the Top layer is the signals layer.
 3.	A wide trace of 0.5mm is for power, and a 0.3mm trace is for signals.
+4. The board dimensions are 56x36mm. 
 
 [Front.cu] [Back.cu]
 

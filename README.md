@@ -104,6 +104,13 @@ The board can be programmed using an external ST-Link programmer via the SWD int
 | GPIO2               | PB5          |
 | GPIO3               | PB4          |
 | GPIO4               | PB3          |
+
+## Board Bring-Up
+### Manufactured and Assembled Board
+![Assembled Boards](/Images/AssembledBoards.jpg)
+### Powering Up and Blinking Onboard LED
+![It's Alive](/Images/Board_BringUp_Blink.gif)
+
 ## My learnings
 <p>Throughout the development of this board, I discovered a lot regarding designing a PCB with a microcontroller on it and various design practices like decoupling and bulk capacitors. I also wanted to learn to program a STMicroelectronics microcontroller using an external programmer, and I achieved this using this board.
 <p>As per software development skills, I am writing my drivers for various peripherals and example codes for this board, which are available on this GitHub repository. 

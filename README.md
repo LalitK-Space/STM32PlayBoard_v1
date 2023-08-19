@@ -19,7 +19,9 @@ A Catalyst for Growth and Innovation, the reason for the development of STM32Pla
 <p>Additionally, the compact nature of the design wasn't just about efficient use of space; it also served a practical purpose. I aimed to create a development board that could seamlessly integrate into my other projects as a convenient replacement. This design approach allows for easy adaptability across different projects, simplifying development and minimizing the need for significant redesigns.
 
 ## System Architecture
-![Block Diagram/Architecture](/Images/blockDiagram.png)
+||
+|:---:|
+|![Block Diagram/Architecture](/Images/blockDiagram.png)|
 
 ## Board Component Selection
 ![Board Components](/Images/BoardComponents.png)

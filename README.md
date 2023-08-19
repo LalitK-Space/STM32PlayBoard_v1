@@ -100,10 +100,10 @@ The board can be programmed using an external ST-Link programmer via the SWD int
 | ADC1_IN0            | PA0          |
 | TIM1_CH1            | PA8          |
 | TIM1_CH2            | PA9          |
-| GPIO1               | PB6          |
+| GPIO1 (*USART1 TX*)   | PB6          |
 | GPIO2               | PB5          |
 | GPIO3               | PB4          |
-| GPIO4               | PB3          |
+| GPIO4 (*SWO*)         | PB3          |
 
 ## Board Bring-Up
 ### Manufactured and Assembled Board

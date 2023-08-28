@@ -14,7 +14,7 @@
 # include <stddef.h>
 
 /**
- * @brief ARM Cortex Mx NVIC_ISERx (Interrupt Set Enable) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_ISERx (Interrupt Set Enable) Registers Addresses (MPU)
  * 
  */
 #define NVIC_ISER0		((volatile uint32_t *) 0xE000E100)
@@ -27,7 +27,7 @@
 #define NVIC_ISER7		((volatile uint32_t *) 0xE000E11C)
 
 /**
- * @brief ARM Cortex Mx NVIC_ICERx (Interrupt Clear Enable) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_ICERx (Interrupt Clear Enable) Registers Addresses (MPU)
  * 
  */
 #define NVIC_ICER0		((volatile uint32_t *) 0xE000E180)
@@ -40,7 +40,7 @@
 #define NVIC_ICER7		((volatile uint32_t *) 0xE000E19C)
 
 /**
- * @brief ARM Cortex Mx NVIC_ISPRx (Interrupt Set-Pending) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_ISPRx (Interrupt Set-Pending) Registers Addresses (MPU)
  * 
  */
 #define NVIC_ISPR0		((volatile uint32_t *) 0xE000E200)
@@ -53,7 +53,7 @@
 #define NVIC_ISPR7		((volatile uint32_t *) 0xE000E21C)
 
 /**
- * @brief ARM Cortex Mx NVIC_ICPRx (Interrupt Clear-Pending) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_ICPRx (Interrupt Clear-Pending) Registers Addresses (MPU)
  * 
  */
 #define NVIC_ICPR0		((volatile uint32_t *) 0xE000E280)
@@ -66,7 +66,7 @@
 #define NVIC_ICPR7		((volatile uint32_t *) 0xE000E29C)
 
 /**
- * @brief ARM Cortex Mx NVIC_IABRx (Interrupt Active Bit) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_IABRx (Interrupt Active Bit) Registers Addresses (MPU)
  * 
  */
 #define NVIC_IABR0		((volatile uint32_t *) 0xE000E300)
@@ -79,7 +79,7 @@
 #define NVIC_IABR7		((volatile uint32_t *) 0xE000E31C)
 
 /**
- * @brief ARM Cortex Mx NVIC_IPRx (Interrupt Priority) Registers Addresses
+ * @brief ARM Cortex Mx NVIC_IPRx (Interrupt Priority) Registers Addresses (MPU)
  * 
  */
 #define NVIC_IPR0		((volatile uint32_t *) 0xE000E400)
@@ -92,6 +92,38 @@
 #define NVIC_IPR7		((volatile uint32_t *) 0xE000E41C)
 
 #define NVIC_IPR59		((volatile uint32_t *) 0xE000E4EF)
+
+/**
+ * @brief 4 bits for pre-emption priority 0 bits for subpriority 
+ * 
+ */
+#define PRI_BITS_IMPLEMENTED	(4)
+
+/**
+ * @brief Base Addresses for various available memory regions 
+ * 
+ */
+#define RAM_BASEADDRESS     (0x20000000U)   // EndAddress 0x20004FFF    (20KB)
+#define FLASH_BASEADDRESS   (0x08000000U)   // EndAddress 0x0800FFFF    (64KB)
+
+
+/**
+ * @brief Base Addresses of Bus Domains: AHB and APBx  
+ * 
+ */
+#define APB1_PERIPHERAL_BASEADDRESS		(0x40000000U)
+#define APB2_PERIPHERAL_BASEADDRESS		(0x40010000U)
+#define AHB_PERIPHERAL_BASEADDRESS		(0x40018000U)
+
+/**
+ * @brief Base Addresses of peripherals on APB2 bus
+ * 
+ */
+
+
+
+
+
 
 
 #endif /* STM32F103XX_H_ */

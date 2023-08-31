@@ -119,6 +119,7 @@
  * @brief Base Addresses of peripherals on APB2 bus
  * 
  */
+#define AFIO_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x0000))
 #define GPIOA_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x0800))
 #define GPIOB_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x0C00))
 #define GPIOC_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x1000))
@@ -139,8 +140,37 @@
  */
 #define RCC_BASEADDRESS		((AHB_PERIPHERAL_BASEADDRESS) + (0x9000))
 
+/**
+ * @brief GPIO Peripheral Registers Definition Structure
+ * 
+ */
+typedef struct
+{
+	volatile uint32_t CRL;	/* - Port Configuration Register Low	- Offset :0x00 - */
+	volatile uint32_t CRH; 	/* - Port Configuration Register High	- Offset :0x04 - */
+	volatile uint32_t IDR; 	/* - Port Input Data Register			- Offset :0x08 - */
+	volatile uint32_t ODR; 	/* - Port Output Data Register			- Offset :0x0C - */
+	volatile uint32_t BSRR;	/* - Port Bit Set/Reset Register		- Offset :0x10 - */
+	volatile uint32_t BRR;	/* - Port Bit Reset Register			- Offset :0x14 - */
+	volatile uint32_t LCKR; /* - Port Configuration Lock Register	- Offset :0x18 - */
 
+}GPIO_RegDef_t;
 
+/**
+ * @brief AFIO Peripheral Registers Definition Structure
+ * 
+ */
+typedef struct
+{
+	volatile uint32_t EVCR;		/* - Event Control Register								- Offset :0x00 - */
+	volatile uint32_t MAPR;		/* - AF Re-map and Debug I/O Configuration Register		- Offset :0x04 - */
+	volatile uint32_t EXTICR1;	/* - External Interrupt Configuration Register 1		- Offset :0x08 - */
+	volatile uint32_t EXTICR2;	/* - External Interrupt Configuration Register 2		- Offset :0x0C - */
+	volatile uint32_t EXTICR3;	/* - External Interrupt Configuration Register 3		- Offset :0x10 - */
+	volatile uint32_t EXTICR4;	/* - External Interrupt Configuration Register 4		- Offset :0x14 - */
+	volatile uint32_t MAPR2;	/* - AF Re-map and Debug I/O Configuration Register 2	- Offset :0x1C - */
+
+}AFIO_RegDef_t;
 
 
 #endif /* STM32F103XX_H_ */

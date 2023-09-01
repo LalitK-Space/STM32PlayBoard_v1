@@ -172,5 +172,25 @@ typedef struct
 
 }AFIO_RegDef_t;
 
+/**
+ * @brief RCC Peripheral Registers Definition Structure
+ * 
+ */
+typedef struct
+{
+	volatile uint32_t CR;		/* - Clock Control Register								- Offset :0x00 - */
+	volatile uint32_t CFGR;		/* - Clock Configuration Register						- Offset :0x04 - */
+	volatile uint32_t CIR;		/* - Clock Interrupt Register							- Offset :0x08 - */
+	volatile uint32_t APB2RSTR;	/* - APB2 Peripheral Reset Register						- Offset :0x0C - */
+	volatile uint32_t APB1RSTR;	/* - APB1 Peripheral Reset Register						- Offset :0x10 - */
+	volatile uint32_t AHBENR;	/* - AHB Peripheral Clock Enable Register				- Offset :0x14 - */
+	volatile uint32_t APB2ENR;	/* - APB2 Peripheral Clock Enable Register				- Offset :0x18 - */
+	volatile uint32_t APB1ENR;	/* - APB1 Peripheral Clock Enable Register				- Offset :0x1C - */
+	volatile uint32_t BDCR;		/* - Backup Domain Control Register						- Offset :0x20 - */
+	volatile uint32_t CSR;		/* - Control/Status Register							- Offset :0x24 - */
+	volatile uint32_t AHBRSTR;	/* - AHB Peripheral Clock Reset Register				- Offset :0x28 - */
+	volatile uint32_t CFGR2;	/* - Clock Configuration Register 2						- Offset :0x2C - */
+
+}RCC_RegDef_t;
 
 #endif /* STM32F103XX_H_ */

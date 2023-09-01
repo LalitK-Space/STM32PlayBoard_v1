@@ -127,6 +127,7 @@
 #define TIM1_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x2C00))
 #define SPI1_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x3000))
 #define ADC1_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x2400))
+#define EXTI_BASEADDRESS		((APB2_PERIPHERAL_BASEADDRESS) + (0x0400))
 
 /**
  * @brief Base Addresses of peripherals on APB1 bus
@@ -192,5 +193,59 @@ typedef struct
 	volatile uint32_t CFGR2;	/* - Clock Configuration Register 2						- Offset :0x2C - */
 
 }RCC_RegDef_t;
+
+
+/**
+ * @brief EXTI Peripheral Registers Definition Structure
+ * 
+ */
+typedef struct
+{
+	volatile uint32_t IMR;		   /* - Interrupt Mask Register							- Offset :0x00 */
+	volatile uint32_t EMR;		   /* - Event Mask Register								- Offset :0x04 */
+	volatile uint32_t RTSR;		   /* - Rising Trigger Selection Register				- Offset :0x08 */
+	volatile uint32_t FTSR;		   /* - Falling Trigger Selection Register				- Offset :0x0C */
+	volatile uint32_t SWIER;	   /* - Software Interrupt Event Register				- Offset :0x10 */
+	volatile uint32_t PR;		   /* - Pending Register								- Offset :0x14 */
+
+}EXTI_RegDef_t;
+
+
+/**
+ * @brief GPIO Peripheral Definitions (Peripheral Base Address type-casted to GPIO_RegDef_t)
+ * 
+ */
+#define GPIOA					((GPIO_RegDef_t *)GPIOA_BASEADDRESS)
+#define GPIOB					((GPIO_RegDef_t *)GPIOB_BASEADDRESS)
+#define GPIOC					((GPIO_RegDef_t *)GPIOC_BASEADDRESS)
+
+/**
+ * @brief RCC Peripheral Definitions (Peripheral Base Address type-casted to RCC_RegDef_t)
+ * 
+ */
+#define RCC						((RCC_RegDef_t *)RCC_BASEADDRESS)
+
+/**
+ * @brief EXTI Peripheral Definitions (Peripheral Base Address type-casted to EXTI_RegDef_t)
+ * 
+ */
+#define EXTI					((EXTI_RegDef_t *)EXTI_BASEADDRESS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif /* STM32F103XX_H_ */
